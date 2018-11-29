@@ -1,21 +1,25 @@
-function add () {
-	
+function add (a, b) {
+	return a + b
 }
 
-function subtract () {
-	
+function subtract (a, b) {
+	return a - b
 }
 
-function sum () {
-	
+function sum (obj) {
+	const sum = obj.reduce((total, number) => {
+		return total + number;
+	}, 0);
 }
 
-function multiply () {
-	
+function multiply (obj) {
+	const product = obj.reduce((total, number) => {
+		return total * number;
+	}, 1);
 }
 
-function power() {
-	
+function power(a, b) {
+	return a ** b
 }
 
 function factorial() {

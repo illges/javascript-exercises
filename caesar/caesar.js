@@ -1,9 +1,15 @@
 const caesar = function(string, factor) {
 
   //Creates an Object containing the Alphabet : { 0:'a', 1:'b', etc }
-  const cipher = Object.assign({}, 'abcdefghijklmnopqrstuvwxyz'.split(''));
+  let cipher = Object.assign({}, 'abcdefghijklmnopqrstuvwxyz'.toUpperCase().split(''));
 
-  return 
+  //cipher = Object.entries(cipher);
+  //return cipher
+
+  return string
+          .split('')
+          .map(current => Object.values(cipher).includes(current) )
+          .join('')
 
 }
 
